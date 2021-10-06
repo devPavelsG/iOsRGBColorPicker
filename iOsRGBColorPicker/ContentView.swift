@@ -47,7 +47,7 @@ struct ContentView: View {
                     isEditingRed = editing
                 }
                 Text("\(Int(redValue))")
-                        .foregroundColor(isEditingRed ? .red : .blue)
+                        .foregroundColor(isEditingRed ? .blue : .gray)
 
                 // MARK: - Green Slider
                 Slider(
@@ -63,7 +63,7 @@ struct ContentView: View {
                     isEditingGreen = editing
                 }
                 Text("\(Int(greenValue))")
-                        .foregroundColor(isEditingGreen ? .red : .blue)
+                        .foregroundColor(isEditingGreen ? .blue : .gray)
 
                 // MARK: - Blue Slider
                 Slider(
@@ -79,7 +79,7 @@ struct ContentView: View {
                     isEditingBlue = editing
                 }
                 Text("\(Int(blueValue))")
-                        .foregroundColor(isEditingBlue ? .red : .blue)
+                        .foregroundColor(isEditingBlue ? .blue : .gray)
 
                 // MARK: - All Values Displayed
                 Text("Red: \(Int(redValue)) - Green: \(Int(greenValue)) - Blue: \(Int(blueValue))")
